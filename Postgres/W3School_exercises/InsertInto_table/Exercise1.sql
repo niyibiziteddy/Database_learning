@@ -1,0 +1,2 @@
+--Write a SQL statement to insert a record with your own value into the table countries against each column.
+INSERT INTO countries (country_id,country_name,region_id) VALUES(001,'Rwanda','05') RETURNING *;
