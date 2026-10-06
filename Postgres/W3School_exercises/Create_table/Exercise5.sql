@@ -3,10 +3,10 @@
  the time of insertion and the foreign key column job_id contain only those values which exist in the jobs table.*/
 
  CREATE TABLE job_history (
-    employee_id UNIQUE PRIMARY KEY,
-    start_date DATE DEFAULT TIMESTAMP,
-    end_date DATE DEFAULT TIMESTAMP,
-    job_id INT(10) NOT NULL,
+    employee_id SERIAL PRIMARY KEY,
+    start_date DATE DEFAULT CURRENT_DATE,
+    end_date DATE DEFAULT CURRENT_DATE,
+    job_id INT NOT NULL,
     FOREIGN KEY (job_id)
     REFERENCES jobs(job_id)
  );
