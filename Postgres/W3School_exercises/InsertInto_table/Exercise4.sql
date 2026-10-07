@@ -1,0 +1,1 @@
+--Write a SQL statement to insert one row in the jobs table to ensure that no duplicate values will be entered into the job_id column.
